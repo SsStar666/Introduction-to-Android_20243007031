@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">AssignmentOne</string>
+    <!-- Part C: application display name changed to "CampusLife" -->
+    <string name="app_name">CampusLife</string>
 
     <!-- Banner welcome text (overlaid on the top photo) -->
     <string name="welcome_text">Welcome to\nCampusLife - Your\nPocket Guide to\nUniversity of Waikato</string>
