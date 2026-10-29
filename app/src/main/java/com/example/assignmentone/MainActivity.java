@@ -1,0 +1,17 @@
+package com.example.assignmentone;
+
+import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+/**
+ * MainActivity - the home screen of the CampusLife app.
+ */
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+}
