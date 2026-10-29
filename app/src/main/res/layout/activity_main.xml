@@ -1,14 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Default (Part A) activity_main.xml - replaced in Part B -->
+<!-- Part B: portrait layout of the MainActivity.
+     Top:  photo banner with the welcome text overlaid.
+     Bottom: 2 x 2 responsive grid of the four option ImageButtons. -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+    <!-- Upper banner: campus photo with welcome text -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/banner_description"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_main_banner" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/text_spacing"
+            android:text="@string/welcome_text"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/banner_title_size"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <!-- Lower section: 2 x 2 grid of the four option buttons -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:columnCount="2"
+        android:rowCount="2">
+
+        <ImageButton
+            android:id="@+id/btn_facilities"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:contentDescription="@string/facilities"
+            android:padding="@dimen/button_padding"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_btn_facilities" />
+
+        <ImageButton
+            android:id="@+id/btn_events"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:contentDescription="@string/events"
+            android:padding="@dimen/button_padding"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_btn_events" />
+
+        <ImageButton
+            android:id="@+id/btn_clubs"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:contentDescription="@string/clubs"
+            android:padding="@dimen/button_padding"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_btn_clubs" />
+
+        <ImageButton
+            android:id="@+id/btn_support"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:contentDescription="@string/support"
+            android:padding="@dimen/button_padding"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_btn_support" />
+    </GridLayout>
 
 </LinearLayout>
