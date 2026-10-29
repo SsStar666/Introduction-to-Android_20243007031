@@ -16,6 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Part F: the DetailActivity registered in the manifest -->
+        <activity
+            android:name=".DetailActivity"
+            android:exported="true" />
     </application>
 
 </manifest>

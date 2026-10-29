@@ -12,4 +12,9 @@
     <string name="events">Events</string>
     <string name="clubs">Clubs</string>
     <string name="support">Support</string>
+
+    <!-- Placeholder text used by the empty DetailActivity (Figure 5) -->
+    <string name="detail_title_placeholder">This is a title</string>
+    <string name="detail_content_placeholder">This is content</string>
+    <string name="detail_icon_description">Section image</string>
 </resources>
