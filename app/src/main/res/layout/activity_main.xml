@@ -48,6 +48,7 @@
             android:layout_rowWeight="1"
             android:background="@color/button_selector"
             android:contentDescription="@string/facilities"
+            android:onClick="onFacilitiesClick"
             android:padding="@dimen/button_padding"
             android:scaleType="fitCenter"
             android:src="@drawable/img_btn_facilities" />
@@ -60,6 +61,7 @@
             android:layout_rowWeight="1"
             android:background="@color/button_selector"
             android:contentDescription="@string/events"
+            android:onClick="onEventsClick"
             android:padding="@dimen/button_padding"
             android:scaleType="fitCenter"
             android:src="@drawable/img_btn_events" />
@@ -72,6 +74,7 @@
             android:layout_rowWeight="1"
             android:background="@color/button_selector"
             android:contentDescription="@string/clubs"
+            android:onClick="onClubsClick"
             android:padding="@dimen/button_padding"
             android:scaleType="fitCenter"
             android:src="@drawable/img_btn_clubs" />
@@ -84,6 +87,7 @@
             android:layout_rowWeight="1"
             android:background="@color/button_selector"
             android:contentDescription="@string/support"
+            android:onClick="onSupportClick"
             android:padding="@dimen/button_padding"
             android:scaleType="fitCenter"
             android:src="@drawable/img_btn_support" />
