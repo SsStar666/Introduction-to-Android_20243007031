@@ -29,3 +29,13 @@ android {
 dependencies {
     implementation 'androidx.appcompat:appcompat:1.7.0'
 }
+
+// Force a single Kotlin version to avoid duplicate-class errors from
+// transitive androidx dependencies pulling older kotlin-stdlib-jdk7/jdk8.
+configurations.all {
+    resolutionStrategy {
+        force 'org.jetbrains.kotlin:kotlin-stdlib:1.8.22'
+        force 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.22'
+        force 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.22'
+    }
+}
